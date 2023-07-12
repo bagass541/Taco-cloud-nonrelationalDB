@@ -1,17 +1,11 @@
 package com.bagas.springinaction.tacocloud_nonrelDB.web;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import com.bagas.springinaction.tacocloud.data.IngredientRepository;
-import com.bagas.springinaction.tacocloud.tacos.Ingredient;
-import com.bagas.springinaction.tacocloud.tacos.Ingredient.Type;
-
-
+import com.bagas.springinaction.tacocloud_nonrelDB.data.IngredientRepository;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.Ingredient;
 
 
 @Component

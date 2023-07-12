@@ -8,13 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
-import com.bagas.springinaction.tacocloud.data.OrderRepository;
-import com.bagas.springinaction.tacocloud.tacos.TacoOrder;
+import com.bagas.springinaction.tacocloud_nonrelDB.data.OrderRepository;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.TacoOrder;
 
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @Controller
 @RequestMapping("/orders")
 @SessionAttributes("tacoOrder")
