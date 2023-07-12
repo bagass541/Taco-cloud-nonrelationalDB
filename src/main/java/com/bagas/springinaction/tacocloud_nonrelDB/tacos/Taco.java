@@ -19,26 +19,25 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-@Table("tacos")
 public class Taco {
 	
-	@PrimaryKeyColumn(type=PrimaryKeyType.PARTITIONED)
-	private UUID id = Uuids.timeBased();
+//	@PrimaryKeyColumn(type=PrimaryKeyType.PARTITIONED)
+//	private UUID id = Uuids.timeBased();
 	
-	@PrimaryKeyColumn(type=PrimaryKeyType.CLUSTERED, ordering = Ordering.DESCENDING)
+//	@PrimaryKeyColumn(type=PrimaryKeyType.CLUSTERED, ordering = Ordering.DESCENDING)
 	private Date createdAt = new Date();
 	
 	@NotNull
 	@Size(min=5, message="name must be at least 5 characters long")
 	private String name;
 	
-	@NotNull
+//	@NotNull
 	@Size(min=1, message="You must choose at least 1 ingredient")
-	@Column("ingredients")
-	private List<IngredientUDT> ingredients = new ArrayList();
+//	@Column("ingredients")
+	private List<Ingredient> ingredients = new ArrayList();
 	
 	public void addIngredient(Ingredient ingredient) {
-		this.ingredients.add(TacoUDRUtils.toIngredientUDT(ingredient));
+		this.ingredients.add(ingredient);
 	}
 	
 	

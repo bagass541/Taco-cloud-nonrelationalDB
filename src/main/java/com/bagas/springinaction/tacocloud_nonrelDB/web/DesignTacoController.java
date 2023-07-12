@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.bagas.springinaction.tacocloud.data.IngredientRepository;
-import com.bagas.springinaction.tacocloud.tacos.Ingredient;
-import com.bagas.springinaction.tacocloud.tacos.Taco;
-import com.bagas.springinaction.tacocloud.tacos.Ingredient.Type;
-import com.bagas.springinaction.tacocloud.tacos.TacoOrder;
+import com.bagas.springinaction.tacocloud_nonrelDB.data.IngredientRepository;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.Ingredient;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.Ingredient.Type;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.Taco;
+import com.bagas.springinaction.tacocloud_nonrelDB.tacos.TacoOrder;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
